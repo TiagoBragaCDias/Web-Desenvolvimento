@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <form action="" method="post" name="meuform">
+    Digite  o valor 1 <input type="text" name="f1"><p></p>
+    Digite  o valor 2 <input type="text" name="f2"><p></p>
+        <button onclick="somar()" value="clique">Clique aqui</button>
+        <button type="reset">Apagar</button>
+   </form>
+
+   <script>
+       function somar(){
+        var number1 = parseInt(document.meuform.f1.value);
+        var number2 = parseInt(document.meuform.f2.value);
+        document.write('O valor da soma é: ' + number1 + number2);
+       } 
+   </script>
+</body>
+</html>

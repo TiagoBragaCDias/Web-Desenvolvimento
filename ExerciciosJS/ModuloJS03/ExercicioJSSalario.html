@@ -1,0 +1,35 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var resposta;
+            do {
+                var qht = parseFloat(window.prompt('informe a quantidade de horas trabalhadas: (135 a 180)'));
+                var vht = parseFloat(window.prompt('informe o valor da horas trabalhada: (25 a 50)'));
+                var inss = parseFloat(window.prompt('informe o percentual de desconto inss: (5 a 15)'))
+
+                var salariobruto = qht * vht;
+                var descontos = (inss/100)*salariobruto;
+                var salarioliquido = salariobruto - descontos;
+
+                if(qht > 180  || qht < 135){
+                    document.write('quantidade de horas invalido');
+                }
+                if(vht> 50  || vht <25){
+                    document.write('valor de horas invalido');
+                }
+                if(inss > 15 || inss<5){
+                    document.write('porcentagem invalida');
+                }
+
+                document.write('salario bruto ' + salariobruto);
+                document.write('descontos ' + descontos);
+                document.write('salario liquido ' + salarioliquido);
+                resposta = window.prompt('deseja continuar?')
+                
+            } while (resposta != 'nao');
+
+        </script>
+    </body>

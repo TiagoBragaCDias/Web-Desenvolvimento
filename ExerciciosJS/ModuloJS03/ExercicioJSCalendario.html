@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="formcal" method="post">
+        digite o mes <input type="text" maxlength="2" name="mes" id="mes"><p></p>
+        <button onclick="verificames()" >Processar</button>
+        <button type="reset">Cancelar</button>
+        <input type="text" name="" id="nome_mes">
+
+    </form>
+
+    <script>
+        function verificames(){
+            var mes = parseInt(document.formcal.mes.value);
+            switch (mes) {
+                case 1:document.formcal.nome_mes.value = 'Janeiro';
+                    break;
+                case 2:document.formcal.nome_mes.value = 'Fevereiro';
+                    break;
+                case 3:document.formcal.nome_mes.value = 'Março';
+                    break;
+                case 4:document.formcal.nome_mes.value = 'Abril';
+                    break;
+                case 5:document.formcal.nome_mes.value = 'Maio';
+                    break;
+                case 6:document.formcal.nome_mes.value = 'Junho';
+                    break;
+                case 7:document.formcal.nome_mes.value = 'Julho';
+                    break;
+                case 8:document.formcal.nome_mes.value = 'Agosto';
+                    break;
+                case 9:document.formcal.nome_mes.value = 'Setembro';
+                    break;
+                case 10:document.formcal.nome_mes.value = 'Outubro';
+                    break;
+                case 11:document.formcal.nome_mes.value = 'Novembro';
+                    break;
+                case 12:document.formcal.nome_mes.value = 'Dezembro';
+                    break;
+                default:
+                    break;
+            }
+
+        }
+    </script>
+</body>
+</html>

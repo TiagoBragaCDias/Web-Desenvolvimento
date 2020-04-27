@@ -1,0 +1,37 @@
+<canvas width="400" height="400" id="canvasTela"></canvas> <!--Criação do canvas-->
+<script>
+window.onload = function(){ 
+   var canvas = document.getElementById('canvasTela');
+   var ctx = canvas.getContext('2d');
+   document.addEventListener('keydown','keyPush');
+   setInterval(jogo, 1000/15)
+}
+xv = yv = 0;    
+function jogo(){
+
+}
+function keyPush(evt){
+    switch(evt.keyCode){
+        case 37:
+            xv = 0;
+            yv = 0;
+            break;
+
+        case 38:
+            xv = 0;
+            yv = 0;
+            break;
+
+        case 39:
+            xv = 0;
+            yv = 0;
+            break;
+
+        case 40:
+            xv = 0;
+            yv = 0;
+            break;
+    }
+
+}
+</script>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upper e lower case</title>
+</head>
+<body>
+    <form  method="post" name="formz">
+        digite seu curso: <input type="text" name="cursoname" id="">
+        <button name="btnvalida" onclick="cadcurso()">Validar</button>
+        <button type="reset">Cancelar</button>
+        <input type="text" name="cursocodigo">
+
+    </form>
+    <script>
+        function cadcurso(){
+            var cursodialogo = document.formz.cursoname.value;
+            if(cursodialogo.toUpperCase() = 'SIST'){
+                document.formz.cursocodigo.value = 'valido';
+            }
+            else{
+                document.formz.cursocodigo.value = 'invalido';
+            }
+        }
+    </script>
+</body>
+</html>
